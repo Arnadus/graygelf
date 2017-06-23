@@ -47,7 +47,7 @@ var GrayGelf = function (opts) {
 
   this.chunkSize    = opts.chunkSize || GrayGelf.CHUNK_WAN
   this.compressType = (opts.compressType || '') === 'gzip' ? 'gzip' : 'deflate'
-  this.hostname     = os.hostname()
+  this.hostname     = opts.hostname || os.hostname()
 
   if (!opts.mock) {
     this._udp = dgram.createSocket('udp4')
