@@ -6,7 +6,7 @@ var Stream = require('stream')
 var format = require('util').format
 var split  = require('split')
 
-var timestamp = Date.now() / 1000.0;
+var timestamp = function () { return Date.now() / 1000.0 } }
 
 /**
  * Available logging levels
