@@ -6,9 +6,6 @@ var Stream = require('stream')
 var format = require('util').format
 var split  = require('split')
 
-/**
- * Prefer microtime accuracy but fallback if unable to use
- */
 var timestamp = Date.now() / 1000.0;
 
 /**
