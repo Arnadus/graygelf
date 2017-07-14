@@ -28,7 +28,6 @@
     "tape": "^3.0.0"
   },
   "optionalDependencies": {
-    "microtime": "^2.0.1"
   },
   "engines": {
     "node": ">= 0.10.0"
